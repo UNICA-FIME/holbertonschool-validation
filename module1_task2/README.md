@@ -5,6 +5,6 @@
 * Go Hugo v0.80+
 * GNU Make in version 3.81+
 ## Lifecycle
-* Build: Generate the website
-* Clean: Cleanup the content of the directory dist/
-* Post: Create a new blog post 
+* build: Generate the website
+* clean: Cleanup the content of the directory dist/
+* post: Create a new blog post 
