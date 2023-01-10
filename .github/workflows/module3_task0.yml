@@ -10,7 +10,7 @@ on:  # yamllint disable-line rule:truthy
   schedule:
     - cron: '0 0 * * *'
 jobs:
-  CI:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: clone github repository
