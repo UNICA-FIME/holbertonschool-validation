@@ -9,9 +9,6 @@
 * clean: Cleanup the content of the directory dist/
 * post: Create a new blog post 
 * help: Show this help usage
-## Workflow
-* Clone the repository (checkout)
-* Change to the appropriate directory and execute `make help`
 ## Build Workflow
 *  required tools are installed prior
 * Install the tools during the build
