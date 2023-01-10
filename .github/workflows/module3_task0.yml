@@ -20,4 +20,3 @@ jobs:
         run: |
           cd module3_task0/
           make help
-        working-directory: module3_task0
