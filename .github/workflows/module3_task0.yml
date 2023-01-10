@@ -1,7 +1,9 @@
+---
 
 
 name: module3_task0
-on:
+
+on:  # yamllint disable-line rule:truthy
   push:
     paths:
       - 'module3_task0/**'
@@ -11,9 +13,11 @@ jobs:
   CI:
     runs-on: ubuntu-latest
     steps:
-      - uses: action/checkout@v3
+      - name: clone github repository
+        uses: action/checkout@v3
+
       - name: Validate Makefile
-    run: |
-      cd module3_task0/
-      make help
-    working-directory: module3_task0
+        run: |
+          cd module3_task0/
+          make help
+        working-directory: module3_task0
