@@ -10,3 +10,5 @@
 * post: Create a new blog post 
 * help: Show this help usage
 ## Workflow
+* Clone the repository (checkout)
+* Change to the appropriate directory and execute `make help`
