@@ -1,0 +1,27 @@
+---
+
+
+name: module3_task1
+
+on:
+  push:
+    paths:
+      - 'module3_task1/**'
+  schedule:
+    - cron: '0 0 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: clone github repository
+        uses: actions/checkout@v3
+
+      - name: run script bash
+        run: |
+          cd module3_task1/
+          ./setup.sh
+
+      - name: Validate Makefile
+        run: |
+          cd module3_task1/
+          make build
