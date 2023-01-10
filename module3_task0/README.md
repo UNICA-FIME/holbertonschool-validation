@@ -9,4 +9,3 @@
 * clean: Cleanup the content of the directory dist/
 * post: Create a new blog post 
 * help: Show this help usage
-## Workflow
