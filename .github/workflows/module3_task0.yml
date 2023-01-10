@@ -1,0 +1,19 @@
+
+
+name: module3_task0
+on:
+  push:
+    paths:
+      - 'module3_task0/**'
+    schedule:
+      - cron: '30 5 * * *'
+jobs:
+  CI:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: action/checkout@v3
+      - name: Validate Makefile
+    run: |
+      cd module3_task0/
+      make help
+    working-directory: module3_task0
