@@ -19,7 +19,6 @@ jobs:
         run: |
           cd module3_task2/
           ./setup.sh
-      
       - name: updated files README.md and DEPLOY.md
         run: |
           cd module3_task2/
@@ -29,12 +28,10 @@ jobs:
         run: |
           cd module3_task2/
           make build
-      
       - name: construccion del archivos zip
         run: |
           cd module3_task2/
           make package
-       
       - name: Validacion
         run: |
           cd module3_task2/
@@ -47,4 +44,3 @@ jobs:
         with:
           name: static-site
           path: module3_task2/awesome-website.zip
-            
