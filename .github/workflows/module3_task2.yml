@@ -1,0 +1,50 @@
+---
+
+
+name: module3_task2
+on:  # Runmm
+  push:
+    paths:
+      - 'module3_task2/**'
+  schedule:
+    - cron: '0 0 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: clone github repository
+        uses: actions/checkout@v3
+
+      - name: run script bash
+        run: |
+          cd module3_task2/
+          ./setup.sh
+      
+      - name: updated files README.md and DEPLOY.md
+        run: |
+          cd module3_task2/
+          make lint
+
+      - name: Validate Makefile
+        run: |
+          cd module3_task2/
+          make build
+      
+      - name: construccion del archivos zip
+        run: |
+          cd module3_task2/
+          make package
+       
+      - name: Validacion
+        run: |
+          cd module3_task2/
+          make unit-tests
+          make integration-tests
+          make validate
+
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: static-site
+          path: module3_task2/awesome-website.zip
+            
