@@ -9,12 +9,19 @@ post:	## Crea un nuevo posts.
 	hugo new posts/$(POST_NAME).md
 	sed -i 's/title:.*/title: $(POST_TITLE)/' content/posts/$(POST_NAME).md
 	sed -i 's/draft:.*/draft: false/' content/posts/$(POST_NAME).md
+
 package: ## Generat the ZIP archive
+	hugo
 	zip -r awesome-website.zip dist/
-lint: ## updated to lint the files README.md and DEPLOY.md
+
+lint: ## Updated to lint the files README.md and DEPLOY.md
 	markdownlint README.md DEPLOY.md
-unit-tests:
-integration-tests:
-validate:
+
+unit-tests: ## Test
+
+integration-tests: ## Test
+
+validate: ## Test
+
 help:	## Muestra la ayuda.
 	@egrep -h '\s##\s' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?# "}; {printf "\033[36m%-0s:\033[0m %s\n",$$1, $$2}'
