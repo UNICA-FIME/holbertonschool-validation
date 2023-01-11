@@ -7,7 +7,12 @@
 ## Lifecycle
 * build: Generate the website
 * clean: Cleanup the content of the directory dist/
-* post: Create a new blog post 
+* post: Create a new blog post
+* package: Generate the archive ZIP
+* lint: Updated to lint the files README.md and DEPLOY.md
+* unit-tests: Tests
+* integration-tests: Tests
+* validate: Tests
 * help: Show this help usage
 ## Build Workflow
 *  required tools are installed prior
