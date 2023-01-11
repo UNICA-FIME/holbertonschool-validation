@@ -1,5 +1,4 @@
 # perations team's FAQ
-
 ## What is in the archive and how to unarchive it?
 
 * In the `awesome-website.zip` archive you will encounter the `dist/` folder
@@ -20,4 +19,3 @@
 * To veryfy is the go-hugo wesite is runnig correctly run the command: `hugo server`
 * Then verify the status of the website in your localhost by clicking the
 `http://localhost:1313/` given by the previous step
-
