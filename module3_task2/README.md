@@ -1,7 +1,6 @@
 
 # Go-Hugo Website
 
-
 ## Prerequisites
 
 * An HTML5-compliant web browser
@@ -23,5 +22,5 @@
 
 ## Build Workflow
 
-*  required tools are installed prior
+* required tools are installed prior
 * Install the tools during the build
