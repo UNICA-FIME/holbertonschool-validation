@@ -16,8 +16,7 @@ package: ## Generat the ZIP archive
 
 lint: ## Updated to lint the files README.md and DEPLOY.md
 	markdownlint README.md DEPLOY.md
-tag: ## Mark realease
-	git tag -a 1.0.0
+
 unit-tests: ## Test
 
 integration-tests: ## Test
