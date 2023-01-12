@@ -5,7 +5,7 @@ name: module3_task3
 on:  # yamllint disable-line rule:truthy
   push:
     branches:
-      - 'main'
+      - main
     tags:
       - '1.0.0'
   schedule:
