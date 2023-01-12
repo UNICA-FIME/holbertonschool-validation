@@ -7,8 +7,6 @@ on:  # yamllint disable-line rule:truthy
     branches:
       - main
       - master
-    tags:
-      - '1.0.0'
   schedule:
     - cron: '0 0 * * *'
 jobs:
