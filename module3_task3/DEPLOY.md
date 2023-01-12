@@ -24,4 +24,4 @@
 
 ## Release
 [“softprops/gh-release” GitHub Action](https://github.com/softprops/action-gh-release)
-
+pointing to the tag `1.0.0`
