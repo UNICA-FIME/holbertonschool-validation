@@ -4,7 +4,7 @@
 name: module3_task3
 on:  # Runmm
   push:
-    branches: [main]
+    branches: [master]
     tags:
       - '1.0.0'
   schedule:
