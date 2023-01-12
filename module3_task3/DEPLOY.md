@@ -22,5 +22,6 @@
 * Then verify the status of the website in your localhost by clicking the
 `http://localhost:1313/` given by the previous step
 
-## What version it?
-* This is version 1.0.0
+## Release
+* awesome-website.zip - ´1.0.0´
+
