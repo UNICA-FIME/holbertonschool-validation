@@ -23,5 +23,5 @@
 `http://localhost:1313/` given by the previous step
 
 ## Release
-* awesome-website.zip - ´1.0.0´
+[“softprops/gh-release” GitHub Action](https://github.com/softprops/action-gh-release)
 
