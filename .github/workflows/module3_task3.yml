@@ -4,8 +4,9 @@
 name: module3_task3
 on:  # Runmm
   push:
-    paths:
-      - 'module3_task3/**'
+      branches: [main]
+      tags:
+        - '1.0.0'
   schedule:
     - cron: '0 0 * * *'
 jobs:
