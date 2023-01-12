@@ -47,7 +47,7 @@ jobs:
           path: module3_task3/awesome-website.zip
       - name: Release binaries
         uses: softprops/action-gh-release@v1
-        if: startsWith(github.ref, 'refs/tags/1.0.0')
+        if: startsWith(github.ref, 'refs/tags/')
         with:
           body_path: module3_task3/DEPLOY.md
           files: |
