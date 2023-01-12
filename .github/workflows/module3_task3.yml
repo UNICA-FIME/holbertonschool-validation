@@ -11,7 +11,7 @@ on:  # yamllint disable-line rule:truthy
     - cron: '0 0 * * *'
 jobs:
   build:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
       - name: clone github repository
         uses: actions/checkout@v3
