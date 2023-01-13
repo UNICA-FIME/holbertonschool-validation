@@ -3,7 +3,7 @@ name: release_drafter
 
 on:  # yamllint disable-line rule:truthy
   push:
-    branches: [main]
+    branches: [main, master]
   pull_request:
     types: [opened, reopened, synchronize]
   permissions:
