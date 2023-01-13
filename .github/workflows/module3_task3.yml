@@ -2,12 +2,11 @@
 
 
 name: module3_task3
-on:  # yamllint disable-line rule:truthy
+on:
   push:
-    branches:
-      - "main"
+    branches: [main]
     tags:
-      - "*.*.*"
+      - "1.0.0"
   schedule:
     - cron: '0 0 * * *'
 jobs:
