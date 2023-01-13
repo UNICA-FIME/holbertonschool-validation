@@ -1,0 +1,23 @@
+---
+
+
+name: release_drafter
+on:
+  push:
+    branches: [main]
+  pull_request:
+    types: [opened, reopened, synchronize]
+  permissions:
+    contents: read
+
+jobs:
+  release_draft:
+    permissions:
+      pull-requests: write
+    run-on: ubuntu-18.04
+    steps:
+      - uses: release-drafter/release-drafter@v5
+        with:
+          publish: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
