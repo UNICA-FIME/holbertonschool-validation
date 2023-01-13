@@ -1,0 +1,54 @@
+---
+
+
+name: module3_task4
+on:  # yamllint disable-line rule:truthy
+  push:
+    branches: [main]
+    tags:
+      - "1.0.0"
+  schedule:
+    - cron: '0 0 * * *'
+  pull_request:
+    types: [opened, reopened, edited, ready_for_review]
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: clone github repository
+        uses: actions/checkout@v3
+
+      - name: run script bash
+        run: |
+          cd module3_task4/
+          ./setup.sh
+      - name: updated files README.md and DEPLOY.md
+        run: |
+          cd module3_task4/
+          make lint
+
+      - name: Validate Makefile
+        run: |
+          cd module3_task4/
+          make build
+      - name: construccion del archivos zip
+        run: |
+          cd module3_task4/
+          make package
+      - name: Validacion
+        run: |
+          cd module3_task4/
+          make unit-tests
+          make integration-tests
+          make validate
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: static-site
+          path: module3_task4/awesome-website.zip
+      - name: Release binaries
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: module3_task4/awesome-website.zip
+          body_path: module3_task4/DEPLOY.md
