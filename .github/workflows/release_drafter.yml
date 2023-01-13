@@ -13,6 +13,7 @@ on:  # yamllint disable-line rule:truthy
 jobs:
   release_draft:
     permissions:
+      contents: write
       pull-requests: write
     run-on: ubuntu-18.04
     steps:
