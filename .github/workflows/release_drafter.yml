@@ -1,7 +1,6 @@
 ---
-
-
 name: release_drafter
+
 on:  # yamllint disable-line rule:truthy
   push:
     branches: [main]
@@ -11,7 +10,7 @@ on:  # yamllint disable-line rule:truthy
     contents: read
 
 jobs:
-  release_draft:
+  update_release_draft:
     permissions:
       contents: write
       pull-requests: write
