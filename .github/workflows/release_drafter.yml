@@ -14,7 +14,7 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
-    run-on: ubuntu-18.04
+    runs-on: ubuntu-18.04
     steps:
       - uses: release-drafter/release-drafter@v5
         with:
