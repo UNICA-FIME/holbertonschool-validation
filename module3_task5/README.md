@@ -24,3 +24,4 @@
 * Required tools are installed prior
 * Install the tools during the build
 * Release 1.0.0
+* Netlify
