@@ -56,7 +56,7 @@ jobs:
         uses: nwtgck/actions-netlify@v1.2
         with:
           publish-dir: "./module3_task5/dist"
-          production-branch: master
+          production-branch: main
           github-token: ${{ secrets.REPO_TOKEN }}
           deploy-message: "Deploy from GitHub Actions"
           enable-pull-request-comment: true
