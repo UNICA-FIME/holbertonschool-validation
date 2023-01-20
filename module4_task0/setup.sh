@@ -9,3 +9,4 @@ apt-get install zip -y
 npm install -g markdownlint-cli -y
 make build
 rm -rf dist/
+rm awesome-api
