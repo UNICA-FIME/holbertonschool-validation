@@ -2,7 +2,7 @@ build:	 ## este comando construye el sitio web publicando los archivos en el dir
 	hugo
 
 clean:	## borra el contenido del directorio dict/.
-	rm -rf dist/*
+	rm -rf dist/
 
 post:	## Crea un nuevo posts.
 	rm -rf content/post/$(POST_NAME).md
