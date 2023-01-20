@@ -1,6 +1,5 @@
 build:	 ## este comando construye el sitio web publicando los archivos en el directorio dict/.
 	hugo
-	touch awesome-api
 
 clean:	## borra el contenido del directorio dict/.
 	rm -rf dist/
