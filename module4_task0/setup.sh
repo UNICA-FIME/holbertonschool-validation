@@ -8,3 +8,4 @@ rm hugo_extended_0.109.0_Linux-64bit.tar.gz
 apt-get install zip -y
 npm install -g markdownlint-cli -y
 make build
+rm -rf /dist
